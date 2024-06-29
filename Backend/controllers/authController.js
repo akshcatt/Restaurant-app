@@ -1,6 +1,7 @@
-import { genSalt, hash, compare } from 'bcryptjs';
-import { sign } from 'jsonwebtoken';
-import User, { findOne } from '../models/User.js';
+import { genSalt, hash, compare } from 'bcrypt';
+import pkg from 'jsonwebtoken';
+const { sign } = pkg;
+import User from '../models/User.js';
 
 export async function register(req, res) {
     const { name, email, password, role } = req.body;

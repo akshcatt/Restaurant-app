@@ -1,9 +1,9 @@
 import express, { json } from 'express';
 import { connect } from 'mongoose';
 import { config } from 'dotenv';
-import authRoutes from './routes/auth';
-import orderRoutes from './routes/orders';
-import menuRoutes from './routes/menu';
+import authRoutes from './routes/auth.js';
+import orderRoutes from './routes/orders.js';
+import menuRoutes from './routes/menu.js';
 import cors from "cors";
 
 config();

@@ -1,7 +1,7 @@
 import { Router } from 'express';
 const router = Router();
-import { createOrder, getOrders, updateOrderStatus } from '../controllers/orderController';
-import authMiddleware from '../middleware/authMiddleware';
+import { createOrder, getOrders, updateOrderStatus } from '../controllers/orderController.js';
+import authMiddleware from '../middlewares/authMiddleware.js';
 
 router.post('/', authMiddleware, createOrder);
 router.get('/', authMiddleware, getOrders);

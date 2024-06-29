@@ -1,4 +1,4 @@
-import Order, { find, findById } from '../models/Order.js';
+import Order from "../models/Order.js";
 
 export async function createOrder(req, res) {
     const { tableNumber, items, totalAmount } = req.body;

@@ -1,4 +1,4 @@
-import MenuItem, { find } from '../models/MenuItem';
+import MenuItem from "../models/MenuItem.js";
 
 export async function createMenuItem(req, res) {
     const { name, description, price, category } = req.body;
